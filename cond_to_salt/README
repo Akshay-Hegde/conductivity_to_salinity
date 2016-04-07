@@ -1,0 +1,9 @@
+Installation :
+		unzip conductivity_to_salinity-master.zip
+		cd conductivity_to_salinity-master/cond_to_salt
+		make
+		make install
+
+		cond_to_salt --version
+		cond_to_salt --help
+
