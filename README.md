@@ -1,13 +1,13 @@
-#Utility to Convert Conductivity to Salinity
+# Utility to Convert Conductivity to Salinity
 
-###Installation
+### Installation
 
-#####Become root user
+##### Become root user
 ```
 [akshay@localhost tmp]$ su 
 Password: 
 ```
-#####Extract compressed file
+##### Extract compressed file
 ```
 [root@localhost tmp]# unzip conductivity_to_salinity-master.zip
 README.md
@@ -17,27 +17,27 @@ cond_to_salt/cond_to_salt_debug.c
 cond_to_salt/README 
 ```
 
-#####Go to cond_to_salt directory
+##### Go to cond_to_salt directory
 
 ```
 [root@localhost tmp]# cd cond_to_salt
 ```
 
-#####Compile & install
+##### Compile & install
 
 ```
 [root@localhost cond_to_salt]# make 
 [root@localhost cond_to_salt]# make install 
 ```
 
-#####Version
+##### Version
 
 ```
 [root@localhost cond_to_salt]# cond_to_salt   --version 
 Rev 1.0.0 (Thu Jun 11 16:41:38 UTC 2015) 
 ```
 
-#####Help
+##### Help
 
 ```
 [root@localhost cond_to_salt]# cond_to_salt   --help 
@@ -65,22 +65,22 @@ Examples :
          If you find any bugs report to ahegde@nio.org / akshay.k.hegde@gmail.com 
 ``` 
 
-###Usage
+### Usage
 
-#####Usage with long options
+##### Usage with long options
 
 ```
 [root@localhost cond_to_salt]# cond_to_salt   --temp=28.8777 --cond=5.779922 --pres=2.011 
 35.4462490704
 ``` 
 
-#####Usage with short options
+##### Usage with short options
 
 ```
 [root@localhost cond_to_salt]# cond_to_salt   -t 28.8777 -c 5.779922 -p 2.011 35.4462490704
 ```
 
-#####Calculation using file
+##### Calculation using file
 
 ```
 [akshay@localhost tmp]$ cat file.txt 
@@ -95,7 +95,7 @@ Pressure temp conductivity
 9.050 28.8482 5.776750
 ``` 
 
-#####Write simple bash script something like this
+##### Write simple bash script something like this
 
 ```
 [akshay@localhost tmp]$ cat run.sh 
@@ -108,7 +108,7 @@ i=$((i+1))
 done < file.txt
 ``` 
 
-#####Execute
+##### Execute
 
 ```
 [akshay@localhost tmp]$ bash run.sh 
