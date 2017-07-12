@@ -77,7 +77,8 @@ Examples :
 ##### Usage with short options
 
 ```
-[root@localhost cond_to_salt]# cond_to_salt   -t 28.8777 -c 5.779922 -p 2.011 35.4462490704
+[root@localhost cond_to_salt]# cond_to_salt   -t 28.8777 -c 5.779922 -p 2.011 
+35.4462490704
 ```
 
 ##### Calculation using file
